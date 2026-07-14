@@ -1,0 +1,19 @@
+# Day 1 local environment for the CS@Mines high school track.
+# Install with:  pip install -r requirements.txt
+# (You can skip this entirely if you use Google Colab, which has these preinstalled.)
+
+# Core data + numerics
+numpy>=1.26,<3
+pandas>=2.2,<3
+
+# Plotting
+matplotlib>=3.8,<4
+seaborn>=0.13,<0.14
+
+# Machine learning
+scikit-learn>=1.4,<1.8
+
+# Jupyter (classic Notebook + JupyterLab, and the kernel that runs your code)
+notebook>=7.1
+jupyterlab>=4.1
+ipykernel>=6.29
