@@ -8,9 +8,10 @@ You already know some Python. Here you will learn the tools and ideas that worki
 
 A small, friendly set of notebooks and guides.
 Day 1 gets you comfortable in Jupyter and walks you through your very first machine learning (ML) workflow.
-Day 2 (coming soon) moves on to Transformers, large language models (LLMs), and building your own website.
+Day 2 moves on to Transformers and large language models (LLMs), then you put one to work: you build a personal website with GitHub Copilot and publish it live on the internet.
 
-You do not need to install anything to get started. Every notebook has a one-click Open in Colab button below that runs right in your browser.
+You do not need to install anything to get started on Day 1. Every notebook has a one-click Open in Colab button below that runs right in your browser.
+Day 2 needs some setup at home first, so peek at the [Day 2 checklist](day2/guides/00_before_day2.md) early.
 
 ## Repository map
 
@@ -18,13 +19,17 @@ You do not need to install anything to get started. Every notebook has a one-cli
 CS_Mines_summer_hs_intern/
 ├── README.md                  ← you are here
 ├── requirements.txt           ← packages to install if you run locally
-└── day1/
-    ├── README.md              ← Day 1 guide: schedule + how to use the notebooks
-    ├── notebooks/             ← the notebooks you work in
-    │   ├── 01_demo_intro_to_jupyter_and_ml.ipynb
-    │   └── 02_titanic_practice.ipynb
-    ├── solutions/             ← the answer key (peek only when you are stuck!)
-    └── data/                  ← the Titanic dataset, bundled so nothing to download
+├── day1/
+│   ├── README.md              ← Day 1 guide: schedule + how to use the notebooks
+│   ├── notebooks/             ← the notebooks you work in
+│   │   ├── 01_demo_intro_to_jupyter_and_ml.ipynb
+│   │   └── 02_titanic_practice.ipynb
+│   ├── solutions/             ← the answer key (peek only when you are stuck!)
+│   └── data/                  ← the Titanic dataset, bundled so nothing to download
+└── day2/
+    ├── README.md              ← Day 2 guide: build + publish your personal website
+    ├── guides/                ← step-by-step guides, from signup to going live
+    └── starter/               ← optional website template to start from
 ```
 
 ## Day 1: Intro to Jupyter & Machine Learning
@@ -41,9 +46,15 @@ Try each step yourself first, since that is where the learning actually happens.
 
 See the [Day 1 guide](day1/README.md) for the schedule and step-by-step instructions.
 
-## Day 2: Coming soon
+## Day 2: Vibe Code Your Personal Website
 
-> 🚧 **Coming soon:** Transformers, LLMs & building your own website. Check back after Day 1.
+By the end of Day 2, your personal website is live on the internet at `https://your-username.github.io`, built by directing GitHub Copilot in plain English.
+The morning lecture covers Transformers and LLMs, so you will understand the AI you are about to put to work.
+
+> ⚠️ **Important:** Day 2 has homework *before* the day.
+> The GitHub Education application can take days to be approved, so read the [Before Day 2 checklist](day2/guides/00_before_day2.md) as early as you can.
+
+See the [Day 2 guide](day2/README.md) for the plan and all the step-by-step guides.
 
 ## How to open the notebooks
 

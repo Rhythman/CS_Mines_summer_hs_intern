@@ -1,0 +1,138 @@
+/* change these first - the fastest way to make it yours */
+:root {
+  --text: #1c1c1c;        /* near-black text */
+  --background: #faf9f6;  /* off-white page background */
+  --accent: #2f6f8f;      /* the one accent color: links, avatar, highlights */
+  --card: #ffffff;        /* card background */
+  --font: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --radius: 10px;         /* how rounded the corners are */
+  --space: 1.25rem;       /* base spacing unit */
+}
+
+/* ---------- base ---------- */
+
+* { box-sizing: border-box; }
+
+html {
+  /* nav clicks glide to each section instead of jumping */
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font);
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--text);
+  background: var(--background);
+}
+
+a { color: var(--accent); }
+
+/* ---------- header and nav ---------- */
+
+header {
+  background: var(--card);
+  border-bottom: 1px solid #e6e4de;
+}
+
+nav {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: var(--space);
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space);
+}
+
+nav a {
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+nav a:hover { color: var(--accent); }
+
+/* ---------- main layout: one centered column ---------- */
+
+main {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 0 var(--space);
+}
+
+section { padding: calc(var(--space) * 2) 0; }
+
+/* ---------- hero ---------- */
+
+#hero {
+  text-align: center;
+}
+
+.avatar {
+  width: 96px;
+  height: 96px;
+  margin: 0 auto var(--space);
+  border-radius: 50%;
+  background: var(--accent);
+  color: #ffffff;
+  display: grid;
+  place-items: center;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+#hero h1 {
+  margin: 0 0 0.25rem;
+  font-size: 2.25rem;
+}
+
+.tagline {
+  margin: 0;
+  color: #55534e; /* muted gray for the one-liner */
+}
+
+/* ---------- project cards ---------- */
+
+.project-grid {
+  display: grid;
+  /* auto-fit + minmax makes the cards wrap into fewer columns on phones */
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: var(--space);
+}
+
+.card {
+  background: var(--card);
+  border: 1px solid #e6e4de;
+  border-radius: var(--radius);
+  padding: var(--space);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+}
+
+.card h3 { margin-top: 0; }
+
+/* ---------- footer ---------- */
+
+footer {
+  border-top: 1px solid #e6e4de;
+  margin-top: calc(var(--space) * 2);
+  padding: calc(var(--space) * 2) var(--space);
+  text-align: center;
+}
+
+.fine-print {
+  font-size: 0.85rem;
+  color: #7a7770;
+}
+
+/* one small tweak so the big heading fits on narrow phones */
+@media (max-width: 480px) {
+  #hero h1 {
+    font-size: 1.75rem;
+  }
+}
